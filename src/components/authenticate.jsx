@@ -34,7 +34,6 @@ export default function Authenticate ({token}) {
         {success && success !== "jwt malformed" && 
             (<div> <p className ="success"> {success} </p> <p className="info"> Your username is: <em> {data.username} </em> </p> </div>) }
          
-        
         <button onClick={handleClick}> Authenticate Token </button>
         </div>
     )

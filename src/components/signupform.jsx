@@ -50,7 +50,7 @@ export default function SignupForm ({setToken, token}) {
             <input value={username} onChange = {(event) => {setUsername(event.target.value)}}/>
         </label>
         <label> Password:
-            <input value={password} onChange = {(event) => {setPassword(event.target.value)}} />
+            <input type ="password" value={password} onChange = {(event) => {setPassword(event.target.value)}} />
         </label> 
         <button type="submit" value="submit"> Submit </button> 
         {success && <p className="success"> Please authenticate your username below </p>}
